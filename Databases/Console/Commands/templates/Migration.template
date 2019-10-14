@@ -1,0 +1,36 @@
+<?php
+declare(strict_types=1);
+
+namespace {{namespace}};
+
+use DateTime;
+use Opulence\Databases\Migrations\Migration;
+
+final class {{class}} extends Migration
+{
+    /**
+     * Gets the creation date, which is used for ordering
+     *
+     * @return DateTime The date this migration was created
+     */
+    public static function getCreationDate() : DateTime
+    {
+        return DateTime::createFromFormat(DateTime::ATOM, '{{creationDate}}');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function down(): void
+    {
+        //
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function up(): void
+    {
+        //
+    }
+}

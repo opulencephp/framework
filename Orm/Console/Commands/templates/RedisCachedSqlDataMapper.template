@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+
+namespace {{namespace}};
+
+use Opulence\Databases\IConnection;
+use Opulence\Orm\DataMappers\RedisCachedSqlDataMapper;
+use Redis;
+
+class {{class}} extends RedisCachedSqlDataMapper
+{
+    /**
+     * Sets the cache data mapper to use in this repo
+     *
+     * @param Redis $cache The cache object used in the data mapper
+     */
+    protected function setCacheDataMapper($cache) : void
+    {
+
+    }
+
+    /**
+     * Sets the Sql data mapper to use in this repo
+     *
+     * @param IConnection $readConnection The read connection
+     * @param IConnection $writeConnection The write connection
+     */
+    protected function setSqlDataMapper(IConnection $readConnection, IConnection $writeConnection) : void
+    {
+
+    }
+}

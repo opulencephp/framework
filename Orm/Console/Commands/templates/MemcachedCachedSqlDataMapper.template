@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+
+namespace {{namespace}};
+
+use Memcached;
+use Opulence\Databases\IConnection;
+use Opulence\Orm\DataMappers\MemcachedCachedSqlDataMapper;
+
+class {{class}} extends MemcachedCachedSqlDataMapper
+{
+    /**
+     * Sets the cache data mapper to use in this repo
+     *
+     * @param Memcached $cache The cache object used in the data mapper
+     */
+    protected function setCacheDataMapper($cache) : void
+    {
+
+    }
+
+    /**
+     * Sets the SQL data mapper to use in this repo
+     *
+     * @param IConnection $readConnection The read connection
+     * @param IConnection $writeConnection The write connection
+     */
+    protected function setSqlDataMapper(IConnection $readConnection, IConnection $writeConnection) : void
+    {
+
+    }
+}
