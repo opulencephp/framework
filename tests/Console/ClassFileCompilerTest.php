@@ -41,7 +41,7 @@ class ClassFileCompilerTest extends TestCase
 
     public function testCompilingClassInValidDirectoryCreatesCorrectPath(): void
     {
-        $expectedPath = __DIR__ . '/../../../../src/Framework/Console/Foo.php';
+        $expectedPath = __DIR__ . '/../../../../src/Framework/src/Console/Foo.php';
         /** @var FileSystem|MockObject $fileSystem */
         $fileSystem = $this->getMockBuilder(FileSystem::class)
             ->onlyMethods(['read', 'write'])
